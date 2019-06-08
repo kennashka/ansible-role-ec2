@@ -1,6 +1,6 @@
 galaxy_info:
   author: Kennashka DeSilva
-  description: "Ansible role that will automate copying files in a directory between two Nodes (Node A to Node B)."
+  description: "Ansible role that will automate creating an ec2 instance"
   company: "Hactopia, LLC"
   license: "license (BSD, MIT)"
   min_ansible_version: 2.4
