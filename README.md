@@ -8,7 +8,7 @@ Ansible role that will automate creating an ec2 instance
 1.1.0
 
 ## Required: You Need To Install Ansible Ubuntu Version
-## Use link for lastest installation intructions: ##https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#latest-releases-via-apt-ubuntu
+## Use link for lastest installation intructions: https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#latest-releases-via-apt-ubuntu
 
 
 ```bash
