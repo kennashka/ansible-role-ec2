@@ -1,9 +1,19 @@
- ec2:
-    key_name: yourkey.pem
-    instance_type: t2.micro
-    image: ami-0c55b159cbfafe1f0
-    wait: yes
-    group_id: sg-00719e5c02bb7fac7
-    count: 1
-    vpc_subnet_id: subnet-4cafd936
-    assign_public_ip: yes
+- name: Creating EC2 instance
+  hosts: localhost
+  gather_facts: False
+
+  tasks:
+
+    - name: create ec2
+      ec2:
+         key_name: yourkey.pem
+         instance_type: t2.micro
+         image: ami-0c55b159cbfafe1f0
+         wait: yes
+         group_id: sg-00719e5c02bb7fac7
+         count: 1
+         count_tag:
+            Name: Test
+         vpc_subnet_id: subnet-4cafd936
+         assign_public_ip: yes
+      register: ec2
